@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `The Music House`,
+    description: `Engaging piano and keyboard lessons, with affordable group sessions aimed at children and new starters, and one-to-one sessions for all ages.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `The Music House`,
+        short_name: `The Music House`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

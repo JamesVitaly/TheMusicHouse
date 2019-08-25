@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "the-music-house",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "The marketing website for The Music House",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "jamesvitaly",
   "dependencies": {
+    "components": "^0.1.0",
     "gatsby": "^2.13.57",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-manifest": "^2.2.5",
@@ -16,7 +17,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-transition-group": "^4.2.2",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
