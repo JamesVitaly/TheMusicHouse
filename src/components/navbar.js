@@ -57,7 +57,7 @@ const MobileMenu = ({ showMobileMenu, toggleMenu }) => {
           <Link className="MobileMenuLinks" to="/tips">
             Tips
           </Link>
-          <Book to="#book">
+          <Book to="/#book">
             Book
           </Book>
         </menu>
@@ -88,14 +88,14 @@ const Navbar = ({ title, showScrollingNav, className }) => {
                     Methodology
                   </Link>
                   <span>|</span>
-                  <Link to="#pricing">
+                  <Link to="/#pricing">
                     Pricing
                   </Link>
                   <span>|</span>
                   <Link to="/tips">
                     Tips
                   </Link>
-                  <Book to="#book">
+                  <Book to="/#book">
                     Book
                   </Book>
                 </menu>

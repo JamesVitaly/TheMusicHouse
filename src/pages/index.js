@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import styled from 'styled-components';
 import Hero from '../components/Hero';
 import Pricing from '../components/Pricing';
+import BookingForm from '../components/BookingForm';
 
 const Section = styled.section`
 a {
@@ -82,13 +83,14 @@ const IndexPage = () => (
           approaches to learning, making a <em>unique method</em> which succeeds in giving children a solid base
           on which they can build their skills, and encourages an ongoing <strong>love of music</strong>.
         </p>
-        <h2>High quality teaching</h2>
-        <h2>Affordable prices</h2>
-        <h2>Individuals</h2>
-        <h2>Groups</h2>
+        <h2>Experienced</h2>
+        <h2>Unique</h2>
+        <h2>Dynamic</h2>
+        <h2>Engaging</h2>
       </div>
     </Section>
     <Pricing />
+    <BookingForm />
   </Layout>
 )
 

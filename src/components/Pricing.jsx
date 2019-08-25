@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from './_common/Button';
 const Pricing = ({ className }) => (
-  <section className={className}>
+  <section id="pricing" className={className}>
     <h1>How much it costs.</h1>
     <div className="container">
       <div className="inner-container">
