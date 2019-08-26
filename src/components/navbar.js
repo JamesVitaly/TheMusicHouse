@@ -71,10 +71,10 @@ const MobileMenu = ({ showMobileMenu, toggleMenu }) => {
 const Navbar = ({ title, showScrollingNav, className }) => {
   const [screenWidth, updateScreenWidth] = useState(window.innerWidth);
   const [showMobileMenu, toggleMenu] = useState(false);
-  const updateWidth = () => {
-    updateScreenWidth(window.innerWidth);
-  }
   useEffect(() => {
+    const updateWidth = () => {
+      updateScreenWidth(window.innerWidth);
+    }
     window.addEventListener('resize', updateWidth)
     return function cleanup() {
       window.removeEventListener("resize", updateWidth);
