@@ -28,7 +28,7 @@ const Pricing = ({ className }) => (
         </div>
       </div>
     </div>
-    <Button label="Book your first session now" isPrimary/>
+    <a href="/#book"><Button label="Book your first session now" isPrimary/></a>
   </section>
 );
 
@@ -37,8 +37,11 @@ export default styled(Pricing)`
   margin-top: 100px;
   flex-direction: column;
   width: 100%;
+  a {
+    text-decoration: none;
+  }
   button {
-    width: 300px;
+    max-width: 400px;
     margin: 30px auto;
   }
   .price-square {
@@ -51,9 +54,11 @@ export default styled(Pricing)`
   p {
     text-align: center;
     font-size: 24px;
+    font-family: 'Barlow';
   }
   .small {
     font-size: 14px;
+    font-family: 'Barlow';
   }
   .container {
     margin-top: 50px;

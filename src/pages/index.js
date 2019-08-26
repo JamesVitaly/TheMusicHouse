@@ -22,6 +22,8 @@ p {
   max-width: 300px;
   margin-right: ${({ alignRight }) => alignRight ? '0': 'auto'};;
   margin-left: ${({ alignRight }) => alignRight ? 'auto': '0'};;
+  font-family: 'Barlow';
+  letter-spacing: 0.25px;
 }
 h1 {
   font-family: 'Barlow';

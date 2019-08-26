@@ -8,7 +8,7 @@ import Button from '../components/_common/Button';
 
 const Section = styled.section`
 a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 display: flex;
 flex-direction: column;
@@ -79,7 +79,7 @@ const SecondPage = () => (
       <h1>Groups.</h1>
       <p>
         Group sessions are aimed solely at younger children, and  offer interactive and engaging
-        lessons for beginners and new learners. Children learn in small groups with a maximum of ten othr students.
+        lessons for beginners and new learners. Children learn in small groups with a maximum of ten other students.
       </p>
     </Section>
     <Section>

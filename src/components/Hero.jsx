@@ -92,7 +92,6 @@ a {
       color: #4A4A4A;
       letter-spacing: 0.25px;
       text-align: left;
-      line-height: 36px;
     }
     }
 }
