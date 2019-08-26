@@ -14,6 +14,7 @@ font-family: 'Barlow';
 margin-right: 10px;
 padding: 5px 20px;
 cursor: pointer;
+text-align: center;
 `
 
 const Overlay = ({ toggleMenu, showMobileMenu }) => {
@@ -50,15 +51,16 @@ const MobileMenu = ({ showMobileMenu, toggleMenu }) => {
             <i className="fas fa-times"></i>
           </button>
         </header>
+          <Link className="MobileMenuLinks" to="/">
+            Home
+          </Link>
           <Link className="MobileMenuLinks" to="/methodology">
             Methodology
           </Link>
-          <Link className="MobileMenuLinks" to="/pricing">
+          <Link className="MobileMenuLinks" to="/#pricing">
             Pricing
           </Link>
-          <Link className="MobileMenuLinks" to="/tips">
-            Tips
-          </Link>
+          <br />
           <Book href="/#book">
             Book
           </Book>
@@ -94,9 +96,6 @@ const Navbar = ({ title, showScrollingNav, className }) => {
                     Pricing
                   </Link>
                   <span>|</span>
-                  <Link to="/tips">
-                    Tips
-                  </Link>
                   <Book href="/#book">
                     Book
                   </Book>
@@ -132,9 +131,6 @@ const Navbar = ({ title, showScrollingNav, className }) => {
                   Pricing
                 </Link>
                 <span>|</span>
-                <Link to="/tips">
-                  Tips
-                </Link>
                 <Book href="/#book">
                   Book
                 </Book>
@@ -215,7 +211,7 @@ nav {
 
 .MobileNav {
  width: 100%;
- padding: 10px 15px;
+ padding: 10px 5px;
  display: flex;
  justify-content: flex-end;
 }
@@ -226,6 +222,8 @@ nav {
   border: none;
   padding-top: 10px;
   cursor: pointer;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .MobileNav > button > i {
@@ -243,7 +241,7 @@ nav {
 
 menu {
   padding: 10px 25px;
-  margin: 15px 10px;
+  margin: 15px 15px;
   a {
     font-size: 20px;
   }

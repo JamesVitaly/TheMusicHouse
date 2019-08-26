@@ -52,10 +52,10 @@ const BookingForm = ({ className }) => {
       <h1>Book it.</h1>
       <div className="booking-form">
         <div className="form booking-form-phone">
-          <h3>Phone me on
-          07908117345
-          or fill out the form
-          and I’ll get in touch with you
+          <h3>Interested? Just fill out the
+          contact form and I’ll get in
+          touch with you as
+          soon as possible
         </h3>
         </div>
         <div className="form booking-form-form">

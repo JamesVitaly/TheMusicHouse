@@ -13,6 +13,9 @@ const Section = styled.section`
 a {
   text-decoration: underline;
 }
+h3 {
+  margin-top: 30px;
+}
 display: flex;
 flex-direction: column;
 padding: 50px;
@@ -37,6 +40,9 @@ h2 {
   font-family: 'Barlow';
   font-size: 54px;
   font-weight: 400;
+}
+h3 {
+    font-family: 'Barlow';
 }
 @media(min-width: 764px) {
   padding: 100px 90px;
@@ -65,10 +71,20 @@ const IndexPage = () => (
       <div className="text-container">
         <h1>What we do.</h1>
         <p>
-          At The Music House we offer <strong>affordable</strong> piano and keyboard lessons for children of all ages.
-           &nbsp;<a className="text-link">Groups</a> and <a className="text-link">individual</a> sessions are available to suit your needs and budget.
-          We also offer beginners classes for adults looking to delve into the music world for the
-          first time - or the first time in a while </p>
+          At The Music House we offer <strong>affordable</strong> piano and keyboard lessons for children and adults, in various
+          locations around <em>Bath, Bristol and the surrounding areas</em>.
+           &nbsp;<a href="/methodology/#group" className="text-link">Groups</a> and <a href="/methodology/#individual" className="text-link">individual</a> sessions are available to suit your needs and budget.
+         </p>
+          <h3 className="left"><strong>Groups</strong></h3>
+          <p className="left">Our group curriculum is geared towards <strong>young learners</strong>. The lessons are dynamic and fun, incorporating the basic concepts of music theory which are addressed through play and story-telling, practice is broken up with games that introduce elements of aural training (listening skills). You can be sure that your young ones will enjoy these sessions!</p>
+          <a href="/methodology/#group">Read more about our group methodology</a>
+          <h3><strong>Individual</strong></h3>
+          <p>At The Music House we also offer individual piano lessons for all ages.
+            For children who prefer making their first steps in the presence of just the teacher,
+            for those more advanced wishing to prepare for ABRSM, or Trinity College exams, or for adults who
+            are looking to delve into the music world for the first time - or the first time in a while. Depending on your needs,
+            session length can be arranged accordingly.
+          </p>
           <h2>High quality teaching</h2>
           <h2>Affordable prices</h2>
           <h2>Individuals</h2>
@@ -79,11 +95,17 @@ const IndexPage = () => (
       <div className="text-container">
         <h1>Who we are.</h1>
         <p>
-          We are a small collection of <strong>experienced</strong> music teachers and music therapist,
-          with years of experience working with children and young people. Throughout the years of
-          teaching young learners we have designed <strong>our own curriculum</strong>, which combined various
-          approaches to learning, making a <em>unique method</em> which succeeds in giving children a solid base
-          on which they can build their skills, and encourages an ongoing <strong>love of music</strong>.
+          Here at The Music House we are a small team of professionals, who are absolutely crazy about making <strong>your experience</strong> with us the best possible!
+        </p>
+        <h3>Kamila</h3>
+        <p>Kamila is an <strong>experienced</strong> music teacher and qualified music therapist, with years of experience working
+          with children and young people. Throughout the years of teaching young learners she has designed
+          her own <strong>unique curriculum</strong>, which combines various approaches to learning, and succeeds in giving children a
+          solid base on which they can build their skills, and encourages an ongoing love of music.</p>
+        <h3>James</h3>
+        <p>James is an experienced <strong>product developer</strong> with a passion for creative projects.
+          He runs the administrative side, builds our online presence, and ensures that we stay <strong>innovative</strong> and forward-thinking
+          in our approach to music, teaching and business.
         </p>
         <h2>Experienced</h2>
         <h2>Unique</h2>

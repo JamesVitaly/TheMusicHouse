@@ -10,13 +10,16 @@ const Section = styled.section`
 a {
   text-decoration: none;
 }
+
 background: #86CDCA;
 display: flex;
 flex-direction: column;
 padding 100px 15px;
 text-align: ${({ alignRight }) => alignRight ? 'right': 'left'};
 .Buttons {
-  margin: 25px 0;
+  margin-top: 25px;
+  margin-right: 0;
+  margin-left: auto; 
   display: flex;
 }
 p {
@@ -75,30 +78,37 @@ const SecondPage = () => (
         <a href="/methodology/#individual"><Button label="Individual sessions"/></a>
       </div>
     </Section>
-    <Section id="group" alignRight>
+    <Section id="#group" alignRight>
       <h1>Groups.</h1>
       <p>
         Group sessions are aimed solely at younger children, and  offer interactive and engaging
         lessons for beginners and new learners. Children learn in small groups with a maximum of ten other students.
       </p>
+      <h3>Structure</h3>
+      <p>Every term children complete a series of learning goals, which allows them to progress to the next stage.</p>
+      <p>In the first term children are introduced to the keyboard and its structure. They learn where the notes live on the keyboard, and begin playing simple pieces using basic letter notation. We introduce the first note values and music theory concepts, which gives children the core understanding of all the concepts while their keyboard skills develop.
+      This level is designed to lay the ground for the students, after which they will begin reading actual music notation.
+    </p>
+    <p>Each session lasts 50 minutes. </p>
+    <p>The group learning will be designed according to the school calendar and the school breaks will be the breaks in the sessions. Depending on the start of the course and the length of the term, we aim at offering a minimum of 8 sessions each term, which will end in each child progressing to the next learning level.
+    The price of the session is £12, and the sessions are designed as a course. Children are strongly encouraged to attend all sessions.
+    </p>
+    <div className="Buttons">
+    <a href="/#book"><Button isPrimary label="Book now"/></a>
+    </div>
     </Section>
-    <Section>
-      <h1>Structure.</h1>
+    <Section id="individual">
+      <h1>Individuals.</h1>
       <p>
-        In the first term children are introduced to the
-        keyboard and its structure. They learn where the notes live on the keyboard,
-        and begin playing simple pieces using simple letter notation. We introduce basic notes values and music theory concepts, which gives children the core
-        understanding of all the concepts while their keyboard skills develop.
+      When working on a one to one basis, our approach is focused on meeting students’
+      individual goals. We offer sessions to those who want to prepare for ABRSM or Trinity College exams,
+      those who want to learn to play their favourite songs, pick up music as a hobby, improvise or even compose
+      their own pieces. The length of the session will depend on the student -
+      for those preparing for exams, 45 minutes is recommended. Get in touch to discuss your sessions.
       </p>
-      <p>
-        This level is designed to lay the ground for the students, after which they will begin reading actual music notation.
-        Through experience we have learnt that introducing notation too early early can discourage children and
-        discontinue their learning. We introduce the notes and their location on the keyboard first and allow time
-        for this knowledge to be
-        fully incorporated into children’s understanding, before moving on to the notation.
-      </p>
+      <a href="/#book"><Button isPrimary label="Book now"/></a>
     </Section>
   </Layout>
 )
 
-export default SecondPage
+export default SecondPage;
