@@ -69,12 +69,15 @@ const MobileMenu = ({ showMobileMenu, toggleMenu }) => {
 }
 
 const Navbar = ({ title, showScrollingNav, className }) => {
-  const [screenWidth, updateScreenWidth] = useState(window.innerWidth);
+  const width = window ? window.innerWidth : '';
+  const [screenWidth, updateScreenWidth] = useState(width);
   const [showMobileMenu, toggleMenu] = useState(false);
-  useEffect(() => {
-    const updateWidth = () => {
+  const updateWidth = () => {
+    if(window) {
       updateScreenWidth(window.innerWidth);
     }
+  }
+  useEffect(() => {
     window.addEventListener('resize', updateWidth)
     return function cleanup() {
       window.removeEventListener("resize", updateWidth);
