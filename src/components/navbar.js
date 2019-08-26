@@ -69,11 +69,11 @@ const MobileMenu = ({ showMobileMenu, toggleMenu }) => {
 }
 
 const Navbar = ({ title, showScrollingNav, className }) => {
-  const width = window ? window.innerWidth : '';
+  const width = typeof window !== 'undefined' ? window.innerWidth : '';
   const [screenWidth, updateScreenWidth] = useState(width);
   const [showMobileMenu, toggleMenu] = useState(false);
   const updateWidth = () => {
-    if(window) {
+    if(typeof window !== 'undefined') {
       updateScreenWidth(window.innerWidth);
     }
   }
