@@ -2,7 +2,7 @@ import Airtable from "airtable";
 
 let modulePromise;
 
-const apiKey = process.env.airtablekey;
+const apiKey = process.env.GATSBY_airtablekey;
 
 console.log(apiKey)
 
