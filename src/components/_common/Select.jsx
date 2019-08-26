@@ -22,7 +22,7 @@ export default styled(Select)`
     color: #4A4A4A;
   }
   select {
-    background: #D8D8D8;
+    background: #E8F3F1;
     height: 60px;
     border: none;
     width: 100%;

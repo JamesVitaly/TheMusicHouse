@@ -34,9 +34,10 @@ const Pricing = ({ className }) => (
 
 export default styled(Pricing)`
   display: flex;
-  margin-top: 100px;
+  padding-top: 100px;
   flex-direction: column;
   width: 100%;
+  background: #E8F3F1;
   a {
     text-decoration: none;
   }
@@ -45,13 +46,14 @@ export default styled(Pricing)`
     margin: 30px auto;
   }
   .price-square {
-    border: 4px solid #979797;
+    border: 6px solid #009C9E;
     height: 350px;
-    background: #D8D8D8;
+    background: #86CDCA;
     margin: 0 auto;
     padding: 15px;
   }
   p {
+  color: #E8F3F1;
     text-align: center;
     font-size: 24px;
     font-family: 'Barlow';

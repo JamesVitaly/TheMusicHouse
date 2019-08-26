@@ -11,8 +11,9 @@ const Button = ({ onClick, isPrimary, className, label, isSubmit, isLoading }) =
 
 
 export default styled(Button)`
-  background: ${ ({isPrimary}) => isPrimary ? '#D8D8D8': 'none'};
-  border:  ${({isPrimary}) => isPrimary ? '4px solid #D8D8D8': '4px solid #979797'};
+  background: ${ ({isPrimary}) => isPrimary ? '#E27D5F': 'white'};
+  border:  ${({isPrimary}) => isPrimary ? '4px solid #E27D5F': '4px solid #029D9E'};
+  color:  ${({isPrimary}) => isPrimary ? 'white': '#029D9E'};
   font-size: 18px;
   font-family: 'Barlow';
   margin-right: 10px;

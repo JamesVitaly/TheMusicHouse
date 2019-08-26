@@ -18,7 +18,7 @@ export default styled(Input)`
     color: #4A4A4A;
   }
   textarea {
-    background: #D8D8D8;
+    background:#E8F3F1;
     height: 160px;
     padding: 10px;
     border: none;

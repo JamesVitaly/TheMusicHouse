@@ -15,8 +15,8 @@ a {
 }
 display: flex;
 flex-direction: column;
-margin: 50px 0;
-padding: 15px;
+padding: 50px;
+background: ${({ background }) => background ? '#86CDCA': '#E8F3F1'};
 text-align: ${({ alignRight }) => alignRight ? 'right': 'left'};
 p {
   max-width: 300px;
@@ -32,14 +32,14 @@ h1 {
   color: #4A4A4A;
 }
 h2 {
-  color: #4A4A4A;
+  color: #029D9E;
   width: auto;
   font-family: 'Barlow';
   font-size: 54px;
   font-weight: 400;
 }
 @media(min-width: 764px) {
-  padding: 30px 90px;
+  padding: 100px 90px;
   p {
     max-width: 600px;
   }
@@ -75,7 +75,7 @@ const IndexPage = () => (
           <h2>Groups</h2>
       </div>
     </Section>
-    <Section>
+    <Section background>
       <div className="text-container">
         <h1>Who we are.</h1>
         <p>

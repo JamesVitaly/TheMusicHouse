@@ -82,6 +82,8 @@ const BookingForm = ({ className }) => {
 
 
 export default styled(BookingForm)`
+background: #86CDCA;
+width: 100%;
 p {
   font-family: 'Barlow';
   margin-bottom: 10px;
@@ -96,7 +98,7 @@ i {
     padding: 0;
     margin: 0;
   }
-  margin: 100px 20px;
+  padding: 100px 20px;
   h1 {
     font-family: 'Barlow';
     font-size: 54px;
@@ -141,7 +143,7 @@ i {
     text-align: center;
   }
   @media(min-width: 992px) {
-    margin: 100px;
+    padding: 100px;
     .form {
       width: 50%;
     }

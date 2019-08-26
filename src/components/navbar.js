@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Link from "gatsby-link";
-import Logo from "../images/logo.png";
+import Logo from "../images/logo-transparent.png";
+import LogoOrange from "../images/logo-orange.png";
 import { CSSTransition } from "react-transition-group";
 import styled from 'styled-components';
 
 const Book = styled.a`
-background: #D8D8D8;
-border: 4px solid #D8D8D8;
+background: #E27D5F;
+border: 4px solid #E27D5F;
+color: white !important;
 font-size: 16px;
 font-family: 'Barlow';
 margin-right: 10px;
@@ -147,7 +149,7 @@ const Navbar = ({ title, showScrollingNav, className }) => {
           <MobileMenu toggleMenu={toggleMenu} showMobileMenu={showMobileMenu}/>
           <Link to="/" className="h-full">
             <img
-              src={Logo}
+              src={LogoOrange}
               alt="doopoll – {title}"
               className="logo"
             />
@@ -161,9 +163,9 @@ const Navbar = ({ title, showScrollingNav, className }) => {
 export default styled(Navbar)`
 font-family: 'Barlow';
 .logo {
-  width: 240px;
+  width: 320px;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 0px;
 }
 
 nav {
@@ -173,7 +175,7 @@ nav {
   border-bottom: none;
   display: flex;
   justify-content: space-between;
-  background: white;
+  background: #86CDCA;
 }
 
 .scrolling {
@@ -182,6 +184,10 @@ nav {
   top:0;
   left:0;
   z-index: 1000;
+  background: white;
+  .logo {
+    padding-top: 5px;
+  }
   box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.16);
 }
 
@@ -212,7 +218,6 @@ nav {
  padding: 10px 15px;
  display: flex;
  justify-content: flex-end;
-
 }
 
 .MobileNav > button {
@@ -238,7 +243,7 @@ nav {
 
 menu {
   padding: 10px 25px;
-  margin: 20px 10px;
+  margin: 15px 10px;
   a {
     font-size: 20px;
   }

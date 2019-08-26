@@ -19,7 +19,7 @@ export default styled(Input)`
   }
   input {
     padding: 10px
-    background: #D8D8D8;
+    background: #E8F3F1;
     height: 60px;
     border: none;
     width: 100%;

@@ -7,7 +7,7 @@ const Hero = ({ className }) => (
   <section className={className}>
     <div className="column left">
       <div className="text-statements">
-        <h1>Music</h1>
+        <h1>Music.</h1>
         <h2>Enjoyment</h2>
         <h2>Development</h2>
         <h2>Self-expression</h2>
@@ -26,21 +26,21 @@ const Hero = ({ className }) => (
   </section>
 );
 
-Hero.propTypes = {
-
-};
-
-Hero.defaultProps = {
-
-};
-
 export default styled(Hero)`
 display: flex;
 flex-direction: column;
 width: 100%;
 box-sizing: border-box;
+background: #86CDCA;
 a {
   text-decoration: none;
+}
+.call-to-action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  * {
+    margin-top: 10px;
+  }
 }
 .left {
   padding: 20px;
@@ -57,7 +57,7 @@ a {
       color: #4A4A4A;
     }
     h2 {
-      color: #4A4A4A;
+      color: #029D9E;
       width: auto;
       font-family: 'Barlow';
       font-size: 54px;

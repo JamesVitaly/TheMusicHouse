@@ -10,10 +10,10 @@ const Section = styled.section`
 a {
   text-decoration: none;
 }
+background: #86CDCA;
 display: flex;
 flex-direction: column;
-margin: 100px 0 100px;
-padding: 15px;
+padding 100px 15px;
 text-align: ${({ alignRight }) => alignRight ? 'right': 'left'};
 .Buttons {
   margin: 25px 0;
@@ -41,7 +41,7 @@ h2 {
   font-weight: 400;
 }
 @media(min-width: 764px) {
-  padding: 30px 90px;
+  padding: 100px 90px;
   p {
     max-width: 600px;
   }
@@ -75,7 +75,7 @@ const SecondPage = () => (
         <a href="/methodology/#individual"><Button label="Individual sessions"/></a>
       </div>
     </Section>
-    <Section alignRight>
+    <Section id="group" alignRight>
       <h1>Groups.</h1>
       <p>
         Group sessions are aimed solely at younger children, and  offer interactive and engaging
