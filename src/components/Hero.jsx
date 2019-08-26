@@ -39,6 +39,9 @@ display: flex;
 flex-direction: column;
 width: 100%;
 box-sizing: border-box;
+a {
+  text-decoration: none;
+}
 .left {
   padding: 20px;
   width: 100%;

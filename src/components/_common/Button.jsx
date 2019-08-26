@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Loading from './Loading';
 
-
-const Button = ({ onClick, isPrimary, className, label, isSubmit }) => (
+const Button = ({ onClick, isPrimary, className, label, isSubmit, isLoading }) => (
   <button className={className} type={isSubmit ? "submit" : "button"}>
-    {label}
+    {isLoading && <Loading />}{label}
   </button>
 );
 
@@ -18,7 +18,10 @@ export default styled(Button)`
   margin-right: 10px;
   font-weight: 500;
   padding: 10px 15px;
-  cursor: pointer
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
   @media(min-width: 764px) {
     font-size: 22px;
   }

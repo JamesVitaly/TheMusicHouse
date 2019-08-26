@@ -16,9 +16,11 @@ const options = [
 const BookingForm = ({ className }) => {
   const [emailError, setEmailError] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const submitContactForm = (form) => {
     form.preventDefault();
     console.log(form);
+    setLoading(true);
     const email = document.querySelector('[name="email"]').value;
     const phone = document.querySelector('[name="phone"]').value;
     const session = document.querySelector('[name="session"]').value;
@@ -33,12 +35,15 @@ const BookingForm = ({ className }) => {
       sendToAirtable({ fields, table: 'music-house-contacts', airBase: 'appgOZ8ASBYyFF26K' })
       .then((res) => {
         console.log(res);
+        setLoading(false)
         setFormSubmitted(true);
       })
       .catch((err) => {
         console.log(err)
+        setLoading(false)
       })
     } else {
+      setLoading(false)
       setEmailError(true)
     }
   }
@@ -61,9 +66,14 @@ const BookingForm = ({ className }) => {
               <Input name="phone" label="Phone number (optional)"/>
               <Select name="session" label="Session type" options={options}/>
               <Textarea name="comments" label="Comments (optional)" />
-              <Button isSubmit isPrimary label="Submit"/>
+              <Button isSubmit isLoading={loading} isPrimary label="Submit"/>
             </form> :
-            <h3>Thanks, I'll get in touch with you very soon!</h3>}
+            <div className="form-submitted">
+              <i className="fas fa-check-circle" />
+              <p>Submitted</p>
+              <h4>Thanks, I'll get in touch with you very soon!</h4>
+            </div>
+            }
         </div>
       </div>
     </section>
@@ -72,6 +82,14 @@ const BookingForm = ({ className }) => {
 
 
 export default styled(BookingForm)`
+p {
+  font-family: 'Barlow';
+  margin-bottom: 10px;
+}
+i {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
   .error {
     color: red;
     font-family: 'Barlow';
@@ -108,8 +126,19 @@ export default styled(BookingForm)`
     margin: 20px 0;
     flex-direction: column;
   }
+  .booking-form-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  }
   .booking-form-phone {
     padding-top: 50px;
+  }
+  .form-submitted {
+    background: #D8D8D8;
+    padding: 20px;
+    text-align: center;
   }
   @media(min-width: 992px) {
     margin: 100px;
