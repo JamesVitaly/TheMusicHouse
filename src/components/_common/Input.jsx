@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Input = ({ className, label }) => (
+const Input = ({ className, label, name, onChange }) => (
   <div className={className}>
     <label>{label}</label>
-    <input type="text"></input>
+    <input onChange={onChange} name={name} type="text"></input>
   </div>
 );
 
@@ -18,6 +18,7 @@ export default styled(Input)`
     color: #4A4A4A;
   }
   input {
+    padding: 10px
     background: #D8D8D8;
     height: 60px;
     border: none;

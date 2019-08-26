@@ -1,38 +1,67 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Input from './_common/Input';
+import Textarea from './_common/Textarea';
 import Select from './_common/Select';
 import Button from './_common/Button';
 
 const options = [
   { label: "Group", value: 'group' },
   { label: "Individual", value: 'individual' },
+  { label: "Not applicable", value: 'n/a'}
 ]
-const BookingForm = ({ className }) => (
-  <section className={className}>
-    <h1>Book it.</h1>
-    <div className="booking-form">
-      <div className="form booking-form-phone">
-        <h3>Phone me on
-        07908117345
-        or fill out the form
-        and I’ll get in touch with you
-      </h3>
+
+const BookingForm = ({ className }) => {
+  const [emailError, setEmailError] = useState(false);
+  const submitContactForm = (form) => {
+    form.preventDefault();
+    console.log(form);
+    const email = document.querySelector('[name="email"]').value;
+    const phone = document.querySelector('[name="phone"]').value;
+    const session = document.querySelector('[name="session"]').value;
+    const comments = document.querySelector('[name="comments"]').value;
+    if(email) {
+      // submit
+    } else {
+      setEmailError(true)
+    }
+  }
+  return (
+    <section id="book" className={className}>
+      <h1>Book it.</h1>
+      <div className="booking-form">
+        <div className="form booking-form-phone">
+          <h3>Phone me on
+          07908117345
+          or fill out the form
+          and I’ll get in touch with you
+        </h3>
+        </div>
+        <div className="form booking-form-form">
+          <form method="POST" onSubmit={(e) => submitContactForm(e)}>
+            <Input onChange={() => setEmailError(false)} name="email" label="Email address"/>
+            {emailError && <p className="error">Please add an email address</p>}
+            <Input name="phone" label="Phone number (optional)"/>
+            <Select name="session" label="Session type" options={options}/>
+            <Textarea name="comments" label="Comments (optional)" />
+            <Button isSubmit isPrimary label="Submit"/>
+          </form>
+        </div>
       </div>
-      <div className="form booking-form-form">
-        <Input label="Email address"/>
-        <Input label="Phone number (optional)"/>
-        <Select label="Session type" options={options}/>
-        <Button isPrimary label="Submit"/>
-      </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+}
 
 
 export default styled(BookingForm)`
-  margin: 100px;
+  .error {
+    color: red;
+    font-family: 'Barlow';
+    padding: 0;
+    margin: 0;
+  }
+  margin: 100px 20px;
   h1 {
     font-family: 'Barlow';
     font-size: 54px;
@@ -60,7 +89,11 @@ export default styled(BookingForm)`
     display: flex;
     flex-direction: column;
   }
+  .booking-form-phone {
+    padding-top: 50px;
+  }
   @media(min-width: 764px) {
+    margin: 100px;
     .form {
       width: 50%;
     }

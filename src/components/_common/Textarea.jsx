@@ -1,19 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-
-const Select = ({ className, label, options, name }) => (
+const Input = ({ className, label, name }) => (
   <div className={className}>
     <label>{label}</label>
-    <select name={name}>
-      {options.map(option => (
-        <option key={option.value} value={option.value}>{option.label}</option>
-      ))}
-    </select>
+    <textarea name={name} rows={20} type="text"></textarea>
   </div>
 );
 
-export default styled(Select)`
+export default styled(Input)`
   width: 100%;
   margin: 20px 0;
   label {
@@ -21,14 +17,14 @@ export default styled(Select)`
     font-family: 'Barlow';
     color: #4A4A4A;
   }
-  select {
+  textarea {
     background: #D8D8D8;
-    height: 60px;
+    height: 160px;
+    padding: 10px;
     border: none;
     width: 100%;
     font-size: 24px;
     font-family: 'Barlow';
     color: #4A4A4A;
-    border-radius: 0px;
   }
 `;
