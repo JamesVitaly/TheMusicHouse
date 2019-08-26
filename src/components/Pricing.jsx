@@ -39,7 +39,7 @@ export default styled(Pricing)`
   width: 100%;
   button {
     width: 300px;
-    margin: 0 auto;
+    margin: 30px auto;
   }
   .price-square {
     border: 4px solid #979797;

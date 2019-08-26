@@ -18,8 +18,8 @@ const Hero = ({ className }) => (
       <div className="call-to-action">
         <p>Whatever your reason for learning keyboard or piano, get started with the Music House by booking your first lesson today.</p>
         <div className="call-to-action-buttons">
-          <Button label="Book a lesson" isPrimary/>
-          <Button label="Group sessions"/>
+          <a href="/#book"><Button label="Book a lesson" isPrimary/></a>
+          <a href="/methodology/#book"><Button label="Group sessions"/></a>
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import Input from './_common/Input';
 import Textarea from './_common/Textarea';
 import Select from './_common/Select';
 import Button from './_common/Button';
+import sendToAirtable from '../modules/airtable';
 
 const options = [
   { label: "Group", value: 'group' },
@@ -14,6 +15,7 @@ const options = [
 
 const BookingForm = ({ className }) => {
   const [emailError, setEmailError] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const submitContactForm = (form) => {
     form.preventDefault();
     console.log(form);
@@ -22,7 +24,20 @@ const BookingForm = ({ className }) => {
     const session = document.querySelector('[name="session"]').value;
     const comments = document.querySelector('[name="comments"]').value;
     if(email) {
-      // submit
+      const fields = {
+        email,
+        phone,
+        session,
+        comments,
+      }
+      sendToAirtable({ fields, table: 'music-house-contacts', airBase: 'appgOZ8ASBYyFF26K' })
+      .then((res) => {
+        console.log(res);
+        setFormSubmitted(true);
+      })
+      .catch((err) => {
+        console.log(err)
+      })
     } else {
       setEmailError(true)
     }
@@ -39,14 +54,16 @@ const BookingForm = ({ className }) => {
         </h3>
         </div>
         <div className="form booking-form-form">
-          <form method="POST" onSubmit={(e) => submitContactForm(e)}>
-            <Input onChange={() => setEmailError(false)} name="email" label="Email address"/>
-            {emailError && <p className="error">Please add an email address</p>}
-            <Input name="phone" label="Phone number (optional)"/>
-            <Select name="session" label="Session type" options={options}/>
-            <Textarea name="comments" label="Comments (optional)" />
-            <Button isSubmit isPrimary label="Submit"/>
-          </form>
+          {!formSubmitted ?
+            <form method="POST" onSubmit={submitContactForm}>
+              <Input onChange={() => setEmailError(false)} name="email" label="Email address"/>
+              {emailError && <p className="error">Please add an email address</p>}
+              <Input name="phone" label="Phone number (optional)"/>
+              <Select name="session" label="Session type" options={options}/>
+              <Textarea name="comments" label="Comments (optional)" />
+              <Button isSubmit isPrimary label="Submit"/>
+            </form> :
+            <h3>Thanks, I'll get in touch with you very soon!</h3>}
         </div>
       </div>
     </section>
@@ -82,17 +99,19 @@ export default styled(BookingForm)`
   }
   .form {
     width:100%;
+    padding: 30px;
   }
   display: flex;
   flex-direction: column;
   .booking-form {
     display: flex;
+    margin: 20px 0;
     flex-direction: column;
   }
   .booking-form-phone {
     padding-top: 50px;
   }
-  @media(min-width: 764px) {
+  @media(min-width: 992px) {
     margin: 100px;
     .form {
       width: 50%;
