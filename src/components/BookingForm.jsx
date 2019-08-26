@@ -91,6 +91,7 @@ p {
 i {
   margin-bottom: 10px;
   font-size: 24px;
+  color: #E27D5F;
 }
   .error {
     color: red;
@@ -138,7 +139,7 @@ i {
     padding-top: 50px;
   }
   .form-submitted {
-    background: #D8D8D8;
+    background: #E8F3F1;
     padding: 20px;
     text-align: center;
   }
