@@ -232,7 +232,7 @@ nav {
 .MobileNav > button > i {
   margin: 10px 15px;
   font-size: 24px;
-  color: #22292f;
+  color: #4A4A4A;
   cursor: pointer;
 }
 

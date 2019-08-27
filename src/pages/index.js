@@ -18,7 +18,7 @@ h3 {
 }
 display: flex;
 flex-direction: column;
-padding: 50px;
+padding: 50px 20px;
 background: ${({ background }) => background ? '#86CDCA': '#E8F3F1'};
 text-align: ${({ alignRight }) => alignRight ? 'right': 'left'};
 p {
@@ -27,6 +27,8 @@ p {
   margin-left: ${({ alignRight }) => alignRight ? 'auto': '0'};;
   font-family: 'Barlow';
   letter-spacing: 0.25px;
+  font-size: 20px;
+  color: #4A4A4A;
 }
 h1 {
   font-family: 'Barlow';

@@ -13,7 +13,7 @@ const Pricing = ({ className }) => (
           <p>for a 50 minute session</p>
           <p className="small">
             Maximum 10 children per group, designed as part of a 9
-            session course, to span a normal school term. Read more here
+            session course, to span a normal school term. <a href="/methodology/#group">Read more here</a>
           </p>
         </div>
       </div>
@@ -23,7 +23,7 @@ const Pricing = ({ className }) => (
           <h1>£30</h1>
           <p>for a 45 minute session</p>
           <p className="small">
-            Other session lengths available on request to suit your particular needs. See methodology for more info.
+            Other session lengths available on request to suit your particular needs. See <a href="/methodology/#individual">methodology</a> for more info.
          </p>
         </div>
       </div>

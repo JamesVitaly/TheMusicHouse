@@ -19,7 +19,7 @@ text-align: ${({ alignRight }) => alignRight ? 'right': 'left'};
 .Buttons {
   margin-top: 25px;
   margin-right: 0;
-  margin-left: auto; 
+  margin-left: auto;
   display: flex;
 }
 p {
@@ -74,11 +74,11 @@ const SecondPage = () => (
         and style of teaching.</strong>
       </p>
       <div className='Buttons'>
-        <a href="/methodology/#group"><Button isPrimary label="Group sessions"/></a>
-        <a href="/methodology/#individual"><Button label="Individual sessions"/></a>
+        <a href="#group"><Button isPrimary label="Group sessions"/></a>
+        <a href="#individual"><Button label="Individual sessions"/></a>
       </div>
     </Section>
-    <Section id="#group" alignRight>
+    <Section id="group" alignRight>
       <h1>Groups.</h1>
       <p>
         Group sessions are aimed solely at younger children, and  offer interactive and engaging

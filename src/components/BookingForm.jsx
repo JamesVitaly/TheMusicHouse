@@ -108,7 +108,6 @@ i {
     text-align: center;
   }
   button {
-    width: 300px;
     margin-top: 20px;
   }
   h3 {
@@ -120,12 +119,16 @@ i {
   }
   .form {
     width:100%;
-    padding: 30px;
+    padding: 15px;
+    button {
+      width: 100%;
+    }
   }
   display: flex;
   flex-direction: column;
   .booking-form {
     display: flex;
+    padding: 0;
     margin: 20px 0;
     flex-direction: column;
   }

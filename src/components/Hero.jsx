@@ -19,7 +19,7 @@ const Hero = ({ className }) => (
         <p>Based in Bath and the surrounding areas, we offer exciting and affordable opportunities for keyboard and piano classes. Get started with The Music House by booking your first lesson today.</p>
         <div className="call-to-action-buttons">
           <a href="/#book"><Button label="Book a lesson" isPrimary/></a>
-          <a href="/methodology/#book"><Button label="Group sessions"/></a>
+          <a href="/methodology/#group"><Button label="Group sessions"/></a>
         </div>
       </div>
     </div>
