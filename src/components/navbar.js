@@ -83,7 +83,6 @@ const Navbar = ({ title, showScrollingNav, className }) => {
       window.removeEventListener("resize", updateWidth);
     }
   })
-  console.log(className)
     return (
       <div className={className}>
         <nav key={screenWidth}>

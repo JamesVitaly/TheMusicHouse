@@ -4,7 +4,6 @@ let modulePromise;
 
 const apiKey = process.env.GATSBY_airtablekey;
 
-console.log(apiKey)
 
 const getRecord = async ({ email, table, airBase }, promise) => {
   modulePromise = promise;
@@ -50,7 +49,6 @@ export const handleGetRecord = ({ email, table, airBase }) =>
 const updateAirtable = ({ id, fields, table, airBase }, promise) => {
   modulePromise = promise;
   try {
-    console.log("u");
     const base = new Airtable({ apiKey }).base(airBase);
     base(table).update(id, fields, function(err, record) {
       if (err) {
@@ -75,7 +73,6 @@ export const handleUpdateAirtable = ({ id, fields, table, airBase }) =>
 const sendToAirtable = ({ fields, table, airBase }, promise) => {
   modulePromise = promise;
   try {
-    console.log(fields)
     const base = new Airtable({ apiKey }).base(airBase);
     base(table).create(fields, function(err, record) {
       if (err) {

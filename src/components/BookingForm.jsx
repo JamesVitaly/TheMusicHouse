@@ -19,7 +19,6 @@ const BookingForm = ({ className }) => {
   const [loading, setLoading] = useState(false);
   const submitContactForm = (form) => {
     form.preventDefault();
-    console.log(form);
     setLoading(true);
     const email = document.querySelector('[name="email"]').value;
     const phone = document.querySelector('[name="phone"]').value;
