@@ -75,7 +75,6 @@ function SEO({ description, lang, meta, title }) {
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
-      <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146538354-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
