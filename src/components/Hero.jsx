@@ -16,7 +16,9 @@ const Hero = ({ className }) => (
     </div>
     <div className="column right">
       <div className="call-to-action">
-        <p>Based in Bath and the surrounding areas, we offer exciting and affordable opportunities for keyboard and piano classes. Get started with The Music House by booking your first lesson today.</p>
+        <p>Based in Bath and the surrounding areas, we offer exciting and affordable opportunities for
+          keyboard and piano classes.
+          Get started with The Music House by booking <strong>a free trial lesson</strong> today.</p>
         <div className="call-to-action-buttons">
           <a href="/#book"><Button label="Book a lesson" isPrimary/></a>
           <a href="/methodology/#group"><Button label="Group sessions"/></a>

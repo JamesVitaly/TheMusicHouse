@@ -52,10 +52,12 @@ const BookingForm = ({ className }) => {
       <h1>Book it.</h1>
       <div className="booking-form">
         <div className="form booking-form-phone">
-          <h3>Interested? Just fill out the
-          contact form and I’ll get in
-          touch with you as
-          soon as possible
+          <h3>
+            If you would like to book, or
+            organise a <strong>free trial</strong>, just fill out the
+            contact form and we’ll get in
+            touch with you as
+            soon as possible
         </h3>
         </div>
         <div className="form booking-form-form">
@@ -112,7 +114,7 @@ i {
   }
   h3 {
     font-family: 'Barlow';
-    font-size: 44px;
+    font-size: 42px;
     font-weight: 400;
     color: #4A4A4A;
     text-align: center;
@@ -155,7 +157,7 @@ i {
     font-size: 80px;
     }
     h3 {
-      font-size: 64px;
+      font-size: 48px;
       max-width: 540px;
     }
     .booking-form {
