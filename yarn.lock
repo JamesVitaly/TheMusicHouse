@@ -2850,11 +2850,6 @@ component-inherit@0.0.3:
   resolved "https://registry.yarnpkg.com/component-inherit/-/component-inherit-0.0.3.tgz#645fc4adf58b72b649d5cae65135619db26ff143"
   integrity sha1-ZF/ErfWLcrZJ1crmUTVhnbJv8UM=
 
-components@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/components/-/components-0.1.0.tgz#2057c08e9c7bf2662feec95c49e5ff2a9ab85ed5"
-  integrity sha1-IFfAjpx78mYv7slcSeX/Kpq4XtU=
-
 compressible@~2.0.16:
   version "2.0.17"
   resolved "https://registry.yarnpkg.com/compressible/-/compressible-2.0.17.tgz#6e8c108a16ad58384a977f3a482ca20bff2f38c1"
@@ -5033,7 +5028,7 @@ gatsby-page-utils@^0.0.5:
     micromatch "^3.1.10"
     slash "^1.0.0"
 
-gatsby-plugin-google-analytics@^2.1.11:
+gatsby-plugin-google-analytics@2.1.11:
   version "2.1.11"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.1.11.tgz#c7b3ed6db9f4b79b3763f73ff03d9b8e1e7a9f03"
   integrity sha512-kutKpfz31iZ/p3R7SE3b/1J10FodxSB8RJTNNKe6Gyolx75Nki+SmunpQGvOTN7bKPBo6EY3wVqxU5U62Yt7DA==
