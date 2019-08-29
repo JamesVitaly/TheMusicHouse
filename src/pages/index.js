@@ -67,7 +67,10 @@ h3 {
 
 const IndexPage = () => (
   <Layout>
-    <SEO title={"Piano & keyboard lessons, groups and individuals"} />
+    <SEO
+      title={"The Music House | Piano & keyboard lessons"}
+      description="Engaging piano and keyboard lessons in Bath, Bristol and surrounding areas. Affordable group lessons aimed at children and new starters, and one-to-one sessions for all ages."
+      />
     <Hero />
     <Section alignRight >
       <div className="text-container">

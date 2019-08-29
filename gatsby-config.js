@@ -5,9 +5,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `The Music House`,
-    description: `Engaging piano and keyboard lessons, with affordable group sessions aimed at children and new starters, and one-to-one sessions for all ages.`,
-    author: `@gatsbyjs`,
+    title: `The Music House | Bath, Bristol and surrounding areas`,
+    description: `Engaging piano and keyboard lessons in Bath, Bristol and surrounding areas. Affordable group lessons aimed at children and new starters, and one-to-one sessions for all ages.`,
+    author: 'JamesVitaly & Kamila Ciesluk',
   },
   plugins: [
     {
