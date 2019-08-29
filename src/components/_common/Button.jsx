@@ -10,9 +10,10 @@ const Button = ({ onClick, isPrimary, className, label, isSubmit, isLoading }) =
 
 
 export default styled(Button)`
-  background: ${ ({isPrimary}) => isPrimary ? '#E27D5F': 'white'};
-  border:  ${({isPrimary}) => isPrimary ? '4px solid #E27D5F': '4px solid #029D9E'};
-  color:  ${({isPrimary}) => isPrimary ? 'white': '#029D9E'};
+  background: ${ ({isPrimary}) => isPrimary ? '#E27D5F': '#C38D9D'};
+  border-radius: 2px;
+  border:  ${({isPrimary}) => isPrimary ? '4px solid #E27D5F': '4px solid #C38D9D'};
+  color:  ${({isPrimary}) => isPrimary ? 'white': 'white'};
   font-size: 18px;
   font-family: 'Barlow';
   margin-right: 10px;
@@ -26,6 +27,6 @@ export default styled(Button)`
     font-size: 22px;
   }
   @media(min-width: 992px) {
-    font-size: 24 px;
+    font-size: 26 px;
   }
 `;

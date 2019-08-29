@@ -51,6 +51,7 @@ a {
   flex-direction: column;
   .text-statements {
     margin: 0 auto;
+    margin-left: 0;
     width: 100%;
     h1 {
       font-family: 'Barlow';
@@ -68,10 +69,10 @@ a {
 
     @media(min-width: 992px) {
       h1 {
-        font-size: 80px;
+        font-size: 74px;
       }
       h2 {
-        font-size: 80px;
+        font-size: 74px;
       }
     }
   }
@@ -92,6 +93,7 @@ a {
       font-family: 'Barlow';
       font-size: 20px;
       color: #4A4A4A;
+      font-weight: 400;
       letter-spacing: 0.25px;
       text-align: left;
     }
@@ -101,7 +103,7 @@ a {
     flex-direction: row;
     .left {
       padding: 30px 0 30px 90px;
-      width: 60%;
+      width: 55%;
     }
     button {
       font-size: 18px !important;

@@ -39,6 +39,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTHG67F"
+        height="0" width="0" style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
       <Navbar showScrollingNav={showScrollingNav} siteTitle={data.site.siteMetadata.title} />
       <Container>
         <main>{children}</main>
