@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
     <>
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTHG67F"
-        height="0" width="0" style="display:none;visibility:hidden">
+        style={{ display:'none', visibility:'hidden', height:'0px', width: '0px'}}>
       </iframe>
     </noscript>
       <Navbar showScrollingNav={showScrollingNav} siteTitle={data.site.siteMetadata.title} />
