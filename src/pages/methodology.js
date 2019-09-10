@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 
-background: #86CDCA;
+background: #FFFFFF;
 display: flex;
 flex-direction: column;
 padding 100px 15px;
@@ -34,7 +34,7 @@ h1 {
   font-family: 'Barlow';
   font-size: 54px;
   font-weight: bold;
-  color: #4A4A4A;
+  color: #029D9E;
 }
 h2 {
   color: #4A4A4A;
