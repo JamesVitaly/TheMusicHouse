@@ -35,9 +35,10 @@ const Pricing = ({ className }) => (
 export default styled(Pricing)`
   display: flex;
   padding-top: 100px;
+  padding-bottom: 50px;
   flex-direction: column;
   width: 100%;
-  background: #E8F3F1;
+  background: #FFFFFF;
   a {
     text-decoration: none;
   }
@@ -46,14 +47,22 @@ export default styled(Pricing)`
     margin: 30px auto;
   }
   .price-square {
-    border: 6px solid #009C9E;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     height: 350px;
     background: #86CDCA;
     margin: 0 auto;
     padding: 15px;
+    a {
+      text-decoration: underline;
+      color: white;
+    }
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
   }
   p {
-  color: #E8F3F1;
+    color: #FFFFFF;
     text-align: center;
     font-size: 24px;
     font-family: 'Barlow';
@@ -78,16 +87,17 @@ export default styled(Pricing)`
   .price-square-individual {
     width: 100%;
     margin: 50px auto;
+
   }
   h1 {
     font-family: 'Barlow';
     font-size: 54px;
     font-weight: bold;
-    color: #4A4A4A;
+    color: #029D9E;
     text-align: center;
   }
   h2 {
-    color: #4A4A4A;
+    color: #FFFFFF;
     width: auto;
     font-family: 'Barlow';
     font-size: 44px;

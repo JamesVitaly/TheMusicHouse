@@ -19,7 +19,7 @@ export default styled(Select)`
   label {
     font-size: 24px;
     font-family: 'Barlow';
-    color: #4A4A4A;
+    color: #FFFFFF;
   }
   select {
     background: #E8F3F1;

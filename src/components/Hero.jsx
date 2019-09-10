@@ -33,7 +33,10 @@ display: flex;
 flex-direction: column;
 width: 100%;
 box-sizing: border-box;
-background: #86CDCA;
+padding-bottom: 50px;
+.call-to-action {
+
+}
 a {
   text-decoration: none;
 }
@@ -63,7 +66,7 @@ a {
       color: #029D9E;
       width: auto;
       font-family: 'Barlow';
-      font-size: 54px;
+      font-size: 50px;
       font-weight: 400;
     }
 

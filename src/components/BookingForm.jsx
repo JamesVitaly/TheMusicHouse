@@ -83,7 +83,7 @@ const BookingForm = ({ className }) => {
 
 
 export default styled(BookingForm)`
-background: #86CDCA;
+background:linear-gradient(#86CDCA,  #029D9E);
 width: 100%;
 p {
   font-family: 'Barlow';
@@ -105,7 +105,7 @@ i {
     font-family: 'Barlow';
     font-size: 54px;
     font-weight: bold;
-    color: #4A4A4A;
+    color: #FFFFFF;
     text-align: center;
   }
   button {
@@ -115,7 +115,7 @@ i {
     font-family: 'Barlow';
     font-size: 42px;
     font-weight: 400;
-    color: #4A4A4A;
+    color: #FFFFFF;
     text-align: center;
   }
   .form {

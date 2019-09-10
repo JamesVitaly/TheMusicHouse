@@ -15,10 +15,10 @@ export default styled(Input)`
   label {
     font-size: 24px;
     font-family: 'Barlow';
-    color: #4A4A4A;
+    color: #FFFFFF;
   }
   input {
-    padding: 10px
+    padding: 10px;
     background: #E8F3F1;
     height: 60px;
     border: none;

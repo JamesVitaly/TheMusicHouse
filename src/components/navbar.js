@@ -15,6 +15,11 @@ margin-right: 10px;
 padding: 5px 20px;
 cursor: pointer;
 text-align: center;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+&:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 `
 
 const Overlay = ({ toggleMenu, showMobileMenu }) => {
@@ -112,7 +117,7 @@ const Navbar = ({ title, showScrollingNav, className }) => {
             <MobileMenu toggleMenu={toggleMenu} showMobileMenu={showMobileMenu}/>
             <Link to="/" className="h-full">
               <img
-                src={Logo}
+                src={LogoOrange}
                 alt="doopoll – {title}"
                 className="logo"
               />
@@ -173,7 +178,6 @@ nav {
   border-bottom: none;
   display: flex;
   justify-content: space-between;
-  background: #86CDCA;
 }
 
 .scrolling {
@@ -207,7 +211,7 @@ nav {
 
 @media(min-width: 768px) {
   nav {
-    padding: 0 40px 0 10px;
+    padding: 0 40px 0 40px;
   }
 }
 
