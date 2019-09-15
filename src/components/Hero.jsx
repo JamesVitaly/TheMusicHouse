@@ -34,6 +34,7 @@ flex-direction: column;
 width: 100%;
 box-sizing: border-box;
 padding-bottom: 50px;
+background: linear-gradient(#86CDCA,#029D9E);
 .call-to-action {
 
 }
@@ -63,7 +64,7 @@ a {
       color: #4A4A4A;
     }
     h2 {
-      color: #029D9E;
+      color: #c7edeb;
       width: auto;
       font-family: 'Barlow';
       font-size: 50px;

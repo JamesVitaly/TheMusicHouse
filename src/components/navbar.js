@@ -170,6 +170,7 @@ font-family: 'Barlow';
   margin: 0;
   padding-top: 0px;
 }
+background: #86CDCA;
 
 nav {
   box-sizing: border-box;
@@ -186,7 +187,7 @@ nav {
   top:0;
   left:0;
   z-index: 1000;
-  background: white;
+  background: #c7edeb;
   .logo {
     padding-top: 5px;
   }

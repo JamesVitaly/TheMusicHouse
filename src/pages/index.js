@@ -10,10 +10,10 @@ import Pricing from '../components/Pricing';
 import BookingForm from '../components/BookingForm';
 
 const Section = styled.section`
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
 a {
   text-decoration: underline;
-  color: ${({ background }) => background ? '#86CDCA;' : '#FFFFFF'};
+  color: ${({ background }) => background ? '#4a4a4a;' : '#4a4a4a'};
 
 }
 h3 {
@@ -22,7 +22,7 @@ h3 {
 display: flex;
 flex-direction: column;
 padding: 50px 20px;
-background: ${({ background }) => background ? '#FFFFFF': 'linear-gradient(#029D9E,#86CDCA);'};
+background: ${({ background }) => background ? 'linear-gradient(#86CDCA,#029D9E)': 'linear-gradient(#029D9E,#86CDCA);'};
 text-align: ${({ alignRight }) => alignRight ? 'right': 'left'};
   color: ${({ background }) => background ? '#86CDCA;' : '#FFFFFF'};
 p {
@@ -33,23 +33,23 @@ p {
   letter-spacing: 0.25px;
   font-size: 20px;
   font-weight: 500;
-  color: ${({ background }) => background ? '#029D9E' : '#FFFFFF'};
+  color: ${({ background }) => background ? '#4a4a4a' : '#4A4A4A'};
 }
 h1 {
   font-family: 'Barlow';
   font-size: 54px;
   font-weight: bold;
-  color: ${({ background }) => background ? '#029D9E' : '#FFFFFF'};
+  color: ${({ background }) => background ? '#4a4a4a' : '#4a4a4a'};
 }
 h2 {
-  color: ${({ background }) => background ? '#029D9E' : '#FFFFFF'};
+  color: ${({ background }) => background ? '#c7edeb' : '#c7edeb'};
   width: auto;
   font-family: 'Barlow';
   font-size: 54px;
   font-weight: 400;
 }
 h3 {
-  color: ${({ background }) => background ? '#029D9E;' : '#FFFFFF'};
+  color: ${({ background }) => background ? '#4a4a4a' : '#4a4a4a'};
   font-family: 'Barlow';
 }
 @media(min-width: 764px) {

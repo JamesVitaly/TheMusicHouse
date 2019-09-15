@@ -38,7 +38,7 @@ export default styled(Pricing)`
   padding-bottom: 50px;
   flex-direction: column;
   width: 100%;
-  background: #FFFFFF;
+  background: linear-gradient(#029D9E,#86CDCA);
   a {
     text-decoration: none;
   }
@@ -93,7 +93,7 @@ export default styled(Pricing)`
     font-family: 'Barlow';
     font-size: 54px;
     font-weight: bold;
-    color: #029D9E;
+    color: #c7edeb;
     text-align: center;
   }
   h2 {

@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 
-background: #FFFFFF;
+background: #86CDCA;
 display: flex;
 flex-direction: column;
 padding 100px 15px;
